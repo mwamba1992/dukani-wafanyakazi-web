@@ -1,0 +1,1 @@
+import{q as i,A as c,r as n,aG as v}from"./index-BPghWBG1.js";function m(o,u={}){const l=v(null),s=n(!1),a=n("");let e=0;async function f(){const r=++e;s.value=!0,a.value="";try{const t=await o();r===e&&(l.value=t)}catch(t){r===e&&(a.value=i(t),u.quiet||c.error(a.value))}finally{r===e&&(s.value=!1)}}return{data:l,loading:s,error:a,run:f}}export{m as u};
