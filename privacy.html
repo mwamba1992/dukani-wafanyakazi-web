@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sera ya Faragha · Privacy Policy — Dukani Wafanyakazi</title>
+<meta name="description" content="Sera ya Faragha ya Dukani Wafanyakazi (Kiswahili na English).">
+<meta name="theme-color" content="#101614">
+<!--
+  TEMPLATE — must be reviewed by a qualified lawyer in Tanzania before publishing.
+  Replace every placeholder: [COMPANY NAME, ADDRESS], [CONTACT EMAIL], [SERVER LOCATION]. (Domain: wafanyakazi.mwendavano.com.)
+  Implemented in the product: PIN brute-force lockout, selfie deletion after 90 days (SELFIE_RETENTION_DAYS),
+  14-day backup rotation. Manual process: account/business closure deletion within 90 days.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #101614; --ink-raised: #1E2724; --ink-line: #2E3935; --mango: #FF9F43;
+    --ground: #F3F1EC; --surface: #FFFFFF; --muted: #5B6460; --muted-on-ink: #A9B2AE;
+    --line: #E3E5DF; --divider: #EEF0EB; --text: #101614;
+    --display: "Bricolage Grotesque", ui-rounded, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--ground); color: var(--text); font: 16px/1.6 var(--body); }
+  a { color: var(--ink); text-decoration-color: var(--mango); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  a:hover { color: #000; }
+  .band { background: var(--ink); color: #fff; padding: 20px 16px 36px; border-radius: 0 0 28px 28px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--muted-on-ink); font-weight: 600; font-size: 14px; }
+  .brand svg { flex: none; }
+  .brand b { color: #fff; font-family: var(--display); font-weight: 800; font-size: 17px; letter-spacing: -0.01em; }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 8vw, 44px); line-height: 1.05; letter-spacing: -0.02em; margin: 28px 0 8px; }
+  h1 span { color: var(--mango); }
+  .meta { color: var(--muted-on-ink); font-size: 14px; margin: 0; }
+  .lang { display: inline-flex; gap: 4px; margin-top: 20px; background: var(--ink-raised); border: 1px solid var(--ink-line); border-radius: 999px; padding: 4px; }
+  .lang a { color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; padding: 8px 14px; border-radius: 999px; }
+  .lang a:first-child { background: var(--mango); color: var(--ink); }
+  main { padding: 0 16px 48px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 22px 20px; margin-top: 16px; }
+  .lang-head { font-family: var(--display); font-weight: 800; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 40px 4px 0; display: flex; align-items: center; gap: 8px; }
+  .lang-head::before { content: ""; width: 18px; height: 4px; border-radius: 4px; background: var(--mango); }
+  h2 { font-family: var(--display); font-weight: 800; font-size: 21px; line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 10px; }
+  h3 { font-family: var(--display); font-weight: 600; font-size: 17px; margin: 18px 0 6px; }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  li::marker { color: var(--mango); }
+  .muted { color: var(--muted); }
+  .note { background: var(--ground); border-radius: 14px; padding: 12px 14px; font-size: 15px; }
+  .table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .table th, .table td { text-align: left; vertical-align: top; padding: 10px 8px 10px 0; border-top: 1px solid var(--divider); }
+  .table th { font-weight: 700; width: 38%; }
+  .card.hl { border: 2px solid var(--mango); }
+  .toc { columns: 2 220px; column-gap: 24px; padding-left: 20px; margin: 0; font-size: 15px; }
+  footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; }
+  :target { scroll-margin-top: 16px; }
+  @media (min-width: 600px) { .card { padding: 28px; border-radius: 24px; } .band { padding: 28px 24px 44px; } main, footer { padding-left: 24px; padding-right: 24px; } }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <rect width="34" height="34" rx="10" fill="#1E2724"/>
+        <path d="M6 12 L9 7 H25 L28 12 Z" fill="#FF9F43"/>
+        <path d="M6 12 q2.75 3 5.5 0 q2.75 3 5.5 0 q2.75 3 5.5 0 q2.75 3 5.5 0" fill="#FF9F43"/>
+        <circle cx="17" cy="18.5" r="3.2" fill="#fff"/>
+        <path d="M10.5 28 q0-6 6.5-6 q6.5 0 6.5 6 Z" fill="#fff"/>
+      </svg>
+      <span><b>Wafanyakazi</b> · Dukani</span>
+    </div>
+    <h1>Sera ya Faragha<br><span>Privacy Policy</span></h1>
+    <p class="meta">Inaanza kutumika / Effective: 26 Oktoba 2026 · 26 October 2026</p>
+    <nav class="lang" aria-label="Lugha / Language">
+      <a href="#sw" hreflang="sw">Kiswahili</a>
+      <a href="#en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ===================== KISWAHILI ===================== -->
+<section id="sw" lang="sw">
+  <p class="lang-head">Kiswahili</p>
+
+  <div class="card">
+    <p>Sera hii inaeleza jinsi programu ya <b>Dukani Wafanyakazi</b> (Android, iOS na wavuti) inavyokusanya, kutumia na kulinda taarifa zako. Programu inasaidia biashara ndogo kurekodi mahudhurio, advance, likizo na mishahara. <b>Haihamishi pesa</b> — inarekodi tu kwamba mshahara umelipwa.</p>
+    <p class="muted">Tazama pia <a href="terms.html#sw">Masharti ya Matumizi</a>.</p>
+    <ol class="toc">
+      <li><a href="#sw-who">Sisi ni nani</a></li>
+      <li><a href="#sw-data">Taarifa tunazokusanya</a></li>
+      <li><a href="#sw-why">Tunazitumia kwa nini</a></li>
+      <li><a href="#sw-legal">Msingi wa kisheria</a></li>
+      <li><a href="#sw-share">Tunashirikisha nani</a></li>
+      <li><a href="#sw-transfer">Taarifa nje ya Tanzania</a></li>
+      <li><a href="#sw-keep">Muda wa kuhifadhi</a></li>
+      <li><a href="#sw-security">Usalama</a></li>
+      <li><a href="#sw-rights">Haki zako</a></li>
+      <li><a href="#delete">Kufuta akaunti</a></li>
+      <li><a href="#sw-children">Watoto</a></li>
+      <li><a href="#sw-changes">Mabadiliko na mawasiliano</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="sw-who">
+    <h2>1. Sisi ni nani</h2>
+    <p>Programu inaendeshwa na <b>[COMPANY NAME, ADDRESS]</b> ("Dukani", "sisi"). Barua pepe: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>.</p>
+    <h3>Nani anawajibika kwa taarifa zipi</h3>
+    <ul>
+      <li><b>Mwajiri (biashara)</b> ndiye <i>mdhibiti</i> wa taarifa za wafanyakazi wake: yeye ndiye anayeamua nani aongezwe, mshahara, zamu, na anayeidhinisha maombi. Sisi tunachakata taarifa hizo kwa niaba yake, kwa maelekezo yake (<i>mchakataji</i>).</li>
+      <li><b>Dukani</b> ndiye <i>mdhibiti</i> wa taarifa za akaunti zinazohitajika kuendesha huduma yenyewe — kwa mfano usajili wa mmiliki, kuingia, usalama na tokeni za arifa.</li>
+    </ul>
+    <p class="note">Kwa lugha rahisi: kama wewe ni mfanyakazi, maswali kuhusu mshahara, mahudhurio au rekodi zako yaende kwanza kwa mwajiri wako. Sisi tutamsaidia, na unaweza pia kutuandikia moja kwa moja.</p>
+  </div>
+
+  <div class="card" id="sw-data">
+    <h2>2. Taarifa tunazokusanya</h2>
+    <p>Akaunti za wafanyakazi zinafunguliwa na mwajiri (anakupa namba ya simu na PIN). Mmiliki anajisajili mwenyewe.</p>
+    <table class="table">
+      <tr><th>Utambulisho</th><td>Jina, namba ya simu, cheo/kazi.</td></tr>
+      <tr><th>PIN</th><td>PIN ya tarakimu 4 — inahifadhiwa kama <i>hash</i> ya bcrypt tu; hatuwezi kuisoma.</td></tr>
+      <tr><th>Mishahara</th><td>Mshahara ghafi, namba ya NSSF (si lazima), hesabu za mishahara (NSSF, PAYE, SDL, WCF), slipu za mshahara, na rekodi kwamba mshahara umelipwa (njia na kumbukumbu).</td></tr>
+      <tr><th>Maombi</th><td>Maombi ya advance na likizo: kiasi, sababu, tarehe na uamuzi.</td></tr>
+      <tr><th>Mahudhurio</th><td>Saa za kuingia na kutoka kazini, kuchelewa, saa za kazi, njia (simu yako au kifaa cha pamoja).</td></tr>
+      <tr><th>Mahali (GPS)</th><td><b>Wakati wa kuingia/kutoka kazini tu</b>: latitudo, longitudo, usahihi na umbali hadi tawi. Hatukufuatilii chinichini wala muda mwingine. GPS si lazima — ukikataa, bado unarekodiwa, ila "Bila GPS".</td></tr>
+      <tr><th>Selfie</th><td>Picha ya hiari unapoingia kazini ("Ingia na selfie"). Inahifadhiwa kwenye seva yetu na inaonekana kwa mmiliki na mameneja wa biashara yako tu.</td></tr>
+      <tr><th>Kifaa</th><td>Namba ya kifaa ya nasibu inayotengenezwa na programu, na tokeni ya arifa (Firebase Cloud Messaging).</td></tr>
+      <tr><th>Biashara</th><td>Jina na simu ya biashara, matawi na mahali yalipo, mipangilio (k.m. zamu, asilimia ya advance).</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">Hakuna matangazo, hakuna zana za uchambuzi (analytics), hakuna ufuatiliaji wa matangazo. Hatuuzi taarifa zako.</p>
+  </div>
+
+  <div class="card" id="sw-why">
+    <h2>3. Tunazitumia kwa nini</h2>
+    <ul>
+      <li>Kukuwezesha kuingia na kulinda akaunti yako.</li>
+      <li>Kurekodi mahudhurio na kuonyesha kama ulikuwa dukani (GPS) au la.</li>
+      <li>Kushughulikia maombi ya advance na likizo.</li>
+      <li>Kuhesabu mishahara na makato, kutengeneza slipu (PDF) na ripoti za mwezi.</li>
+      <li>Kutuma arifa (k.m. "ombi limekubaliwa", "slipu iko tayari").</li>
+      <li>Kuendesha, kurekebisha hitilafu na kulinda huduma; kutimiza wajibu wa kisheria.</li>
+    </ul>
+    <p>Hatutumii taarifa zako kwa matangazo wala kufanya maamuzi ya kiotomatiki yenye athari kubwa kwako; maamuzi (k.m. kukubali advance) hufanywa na mwajiri.</p>
+  </div>
+
+  <div class="card" id="sw-legal">
+    <h2>4. Msingi wa kisheria</h2>
+    <p>Chini ya Sheria ya Ulinzi wa Taarifa Binafsi, 2022 (PDPA):</p>
+    <ul>
+      <li><b>Mkataba</b> — kutoa huduma kwa biashara na kwa wewe kama mtumiaji.</li>
+      <li><b>Wajibu wa kisheria</b> — mwajiri lazima atunze rekodi za ajira, mishahara na kodi.</li>
+      <li><b>Maslahi halali</b> — usalama, kuzuia udanganyifu wa mahudhurio, kuboresha huduma.</li>
+      <li><b>Ridhaa</b> — kwa GPS, kamera (selfie) na arifa, kupitia ruhusa za simu yako. Unaweza kuiondoa wakati wowote kwenye mipangilio ya simu.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="sw-share">
+    <h2>5. Tunashirikisha nani</h2>
+    <ul>
+      <li><b>Mwajiri wako</b> — mmiliki na mameneja wa biashara yako wanaona mahudhurio (pamoja na hali ya GPS na umbali), selfie, maombi na mishahara yako. Wafanyakazi wengine hawaoni taarifa zako.</li>
+      <li><b>Google (Firebase Cloud Messaging)</b> — kutuma arifa kwenye simu yako; hupokea tokeni ya kifaa na maandishi ya arifa.</li>
+      <li><b>Mtoa huduma ya seva (hosting)</b> — anayehifadhi seva yetu na hifadhi rudufu (backup).</li>
+      <li><b>Mamlaka</b> — pale tu sheria inapotutaka (k.m. amri ya mahakama).</li>
+    </ul>
+    <p><b>Hatuuzi</b> taarifa binafsi kwa mtu yeyote.</p>
+  </div>
+
+  <div class="card" id="sw-transfer">
+    <h2>6. Taarifa nje ya Tanzania</h2>
+    <p>Seva yetu iko <b>[SERVER LOCATION]</b>. Google/Firebase inaweza kuchakata tokeni za arifa nje ya Tanzania. Tunapohamisha taarifa nje ya nchi tunachukua hatua zinazotakiwa na PDPA ili ziwe na ulinzi unaofaa.</p>
+  </div>
+
+  <div class="card" id="sw-keep">
+    <h2>7. Muda wa kuhifadhi</h2>
+    <ul>
+      <li>Tunahifadhi taarifa wakati akaunti ya biashara iko hai.</li>
+      <li>Rekodi za mahudhurio na mishahara zinahifadhiwa kwa muda ambao mwajiri anazihitaji kisheria — hadi <b>miaka 5</b> baada ya ajira kuisha (Sheria ya Ajira na Mahusiano Kazini) na miaka 5 kwa rekodi za kodi (Sheria ya Usimamizi wa Kodi).</li>
+      <li>Biashara ikifunga akaunti, tunafuta au kuficha utambulisho wa taarifa ndani ya <b>siku 90</b>, isipokuwa sheria ikitutaka kuzihifadhi zaidi.</li>
+      <li>Selfie zinafutwa baada ya <b>siku 90</b>.</li>
+      <li>Hifadhi rudufu (backup) huzunguka na kufutwa baada ya <b>siku 14</b>.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="sw-security">
+    <h2>8. Usalama</h2>
+    <ul>
+      <li>Mawasiliano yote yamesimbwa kwa HTTPS.</li>
+      <li>PIN zinahifadhiwa kama hash ya bcrypt; majaribio mengi ya PIN yasiyo sahihi yanazuiwa kwa muda.</li>
+      <li>Ruhusa kulingana na nafasi (mmiliki, meneja, mfanyakazi); kila biashara inaona taarifa zake tu.</li>
+      <li>Usiwape wengine PIN yako. Ukihisi imevuja, ibadilishe ("Badili PIN") au mwambie mwajiri wako.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="sw-rights">
+    <h2>9. Haki zako</h2>
+    <p>Chini ya PDPA 2022 una haki ya:</p>
+    <ul>
+      <li>kupata nakala ya taarifa zako;</li>
+      <li>kurekebisha taarifa zisizo sahihi;</li>
+      <li>kuomba kufutwa kwa taarifa (isipokuwa zile ambazo mwajiri lazima azihifadhi kisheria);</li>
+      <li>kupinga au kuzuia matumizi fulani;</li>
+      <li>kuondoa ridhaa (GPS, kamera, arifa) kwenye mipangilio ya simu.</li>
+    </ul>
+    <p>Tuandikie <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> au mwombe mwajiri wako. Tutajibu ndani ya siku 30 na tunaweza kuthibitisha utambulisho wako kwanza. Ukiwa hujaridhika, unaweza kulalamika kwa <b>Tume ya Ulinzi wa Taarifa Binafsi (PDPC)</b>.</p>
+  </div>
+
+  <div class="card hl" id="delete">
+    <h2>10. Kufuta akaunti na taarifa / Delete your account</h2>
+    <p><b>Mfanyakazi:</b> mwombe mwajiri wako akuondoe kwenye Timu, au tuandikie <a href="mailto:[CONTACT EMAIL]?subject=Futa%20akaunti">[CONTACT EMAIL]</a> kutoka namba au barua pepe inayojulikana, ukiandika jina lako, namba ya simu na jina la biashara.</p>
+    <p><b>Mmiliki:</b> tuandikie <a href="mailto:[CONTACT EMAIL]?subject=Futa%20biashara">[CONTACT EMAIL]</a> ukiomba kufunga biashara; tutathibitisha kuwa ni wewe.</p>
+    <p>Tutafuta akaunti, PIN, tokeni za kifaa na selfie mara moja baada ya kuthibitisha. Rekodi za mahudhurio na mishahara ambazo mwajiri lazima azihifadhi kisheria zinabaki hadi muda huo uishe (tazama sehemu ya 7), kisha zinafutwa.</p>
+    <p class="muted"><a href="#en-delete">English version below</a></p>
+  </div>
+
+  <div class="card" id="sw-children">
+    <h2>11. Watoto</h2>
+    <p>Programu ni ya mahali pa kazi na si kwa watu walio chini ya miaka 18. Hatukusanyi taarifa za watoto kwa makusudi; tukigundua, tutazifuta.</p>
+  </div>
+
+  <div class="card" id="sw-changes">
+    <h2>12. Mabadiliko na mawasiliano</h2>
+    <p>Tunaweza kubadilisha sera hii. Mabadiliko makubwa tutayatangaza ndani ya programu au ukurasa huu, na tarehe ya juu itabadilika.</p>
+    <p>Maswali: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> · [COMPANY NAME, ADDRESS]</p>
+  </div>
+</section>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en" lang="en">
+  <p class="lang-head">English</p>
+
+  <div class="card">
+    <p>This policy explains how the <b>Dukani Wafanyakazi</b> app (Android, iOS and web) collects, uses and protects your information. The app helps small businesses record attendance, salary advances, leave and payroll. <b>It never moves money</b> — it only records that a salary was paid.</p>
+    <p class="muted">See also the <a href="terms.html#en">Terms of Use</a>.</p>
+    <ol class="toc">
+      <li><a href="#en-who">Who we are</a></li>
+      <li><a href="#en-data">Data we collect</a></li>
+      <li><a href="#en-why">How we use it</a></li>
+      <li><a href="#en-legal">Legal bases</a></li>
+      <li><a href="#en-share">Who we share it with</a></li>
+      <li><a href="#en-transfer">Transfers outside Tanzania</a></li>
+      <li><a href="#en-keep">How long we keep it</a></li>
+      <li><a href="#en-security">Security</a></li>
+      <li><a href="#en-rights">Your rights</a></li>
+      <li><a href="#en-delete">Deleting your account</a></li>
+      <li><a href="#en-children">Children</a></li>
+      <li><a href="#en-changes">Changes and contact</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="en-who">
+    <h2>1. Who we are</h2>
+    <p>The app is operated by <b>[COMPANY NAME, ADDRESS]</b> ("Dukani", "we"). Email: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>.</p>
+    <h3>Who is responsible for what</h3>
+    <ul>
+      <li><b>The employer (the business)</b> is the <i>controller</i> of its employees' data: it decides who is added, salaries, shifts, and approves requests. We process that data on its behalf and on its instructions (as <i>processor</i>).</li>
+      <li><b>Dukani</b> is the <i>controller</i> of the account data needed to run the service itself — for example owner sign-up, sign-in, security and notification tokens.</li>
+    </ul>
+    <p class="note">In plain words: if you are an employee, questions about your pay, attendance or records should go to your employer first. We will help them, and you can also write to us directly.</p>
+  </div>
+
+  <div class="card" id="en-data">
+    <h2>2. Data we collect</h2>
+    <p>Employee accounts are created by the employer (who gives you a phone number and PIN). Owners sign up themselves.</p>
+    <table class="table">
+      <tr><th>Identity</th><td>Name, phone number, job title.</td></tr>
+      <tr><th>PIN</th><td>4-digit PIN — stored only as a bcrypt hash; we cannot read it.</td></tr>
+      <tr><th>Payroll</th><td>Gross salary, NSSF number (optional), payroll figures (NSSF, PAYE, SDL, WCF), payslips, and a record that the salary was paid (method and reference).</td></tr>
+      <tr><th>Requests</th><td>Salary advance and leave requests: amount, reason, dates and decision.</td></tr>
+      <tr><th>Attendance</th><td>Clock-in and clock-out times, lateness, hours worked, method (your phone or the shared device).</td></tr>
+      <tr><th>Location (GPS)</th><td><b>Only at the moment you clock in or out</b>: latitude, longitude, accuracy and distance to the branch. We do not track you in the background or at any other time. GPS is optional — if you decline, you are still clocked in, marked "No GPS".</td></tr>
+      <tr><th>Selfie</th><td>Optional photo at clock-in ("Clock in with a selfie"). Stored on our server and visible only to your business's owner and managers.</td></tr>
+      <tr><th>Device</th><td>A random device ID generated by the app, and a push notification token (Firebase Cloud Messaging).</td></tr>
+      <tr><th>Business</th><td>Business name and phone, branches and their locations, settings (e.g. shifts, advance limit).</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">No ads, no analytics SDKs, no advertising tracking. We do not sell your data.</p>
+  </div>
+
+  <div class="card" id="en-why">
+    <h2>3. How we use it</h2>
+    <ul>
+      <li>To let you sign in and keep your account secure.</li>
+      <li>To record attendance and show whether you were at the shop (GPS) or not.</li>
+      <li>To handle salary advance and leave requests.</li>
+      <li>To calculate pay and deductions, and produce payslips (PDF) and monthly reports.</li>
+      <li>To send notifications (e.g. "request approved", "payslip ready").</li>
+      <li>To run, fix and protect the service, and to meet legal obligations.</li>
+    </ul>
+    <p>We do not use your data for advertising, and we do not make automated decisions with significant effects on you; decisions (e.g. approving an advance) are made by your employer.</p>
+  </div>
+
+  <div class="card" id="en-legal">
+    <h2>4. Legal bases</h2>
+    <p>Under the Personal Data Protection Act, 2022 (PDPA):</p>
+    <ul>
+      <li><b>Contract</b> — to provide the service to the business and to you as a user.</li>
+      <li><b>Legal obligation</b> — employers must keep employment, payroll and tax records.</li>
+      <li><b>Legitimate interests</b> — security, preventing attendance fraud, improving the service.</li>
+      <li><b>Consent</b> — for GPS, camera (selfie) and notifications, through your phone's permissions. You can withdraw it at any time in your phone settings.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="en-share">
+    <h2>5. Who we share it with</h2>
+    <ul>
+      <li><b>Your employer</b> — your business's owner and managers see your attendance (including GPS status and distance), selfies, requests and payroll. Other workers do not see your data.</li>
+      <li><b>Google (Firebase Cloud Messaging)</b> — to deliver notifications to your phone; it receives the device token and the notification text.</li>
+      <li><b>Our hosting provider</b> — which hosts our server and backups.</li>
+      <li><b>Authorities</b> — only when the law requires it (e.g. a court order).</li>
+    </ul>
+    <p>We <b>do not sell</b> personal data to anyone.</p>
+  </div>
+
+  <div class="card" id="en-transfer">
+    <h2>6. Transfers outside Tanzania</h2>
+    <p>Our server is located in <b>[SERVER LOCATION]</b>. Google/Firebase may process push tokens outside Tanzania. When data is transferred abroad we take the steps the PDPA requires so it stays adequately protected.</p>
+  </div>
+
+  <div class="card" id="en-keep">
+    <h2>7. How long we keep it</h2>
+    <ul>
+      <li>We keep data while the business account is active.</li>
+      <li>Attendance and payroll records are kept as long as the employer needs them by law — up to <b>5 years</b> after employment ends (Employment and Labour Relations Act) and 5 years for tax records (Tax Administration Act).</li>
+      <li>When a business closes its account, we delete or anonymise its data within <b>90 days</b>, unless the law requires us to keep it longer.</li>
+      <li>Selfies are deleted after <b>90 days</b>.</li>
+      <li>Backups rotate and are deleted after <b>14 days</b>.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="en-security">
+    <h2>8. Security</h2>
+    <ul>
+      <li>All traffic is encrypted with HTTPS.</li>
+      <li>PINs are stored as bcrypt hashes; repeated wrong PIN attempts are temporarily locked out.</li>
+      <li>Role-based access (owner, manager, worker); each business sees only its own data.</li>
+      <li>Do not share your PIN. If you think it has leaked, change it ("Change PIN") or tell your employer.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="en-rights">
+    <h2>9. Your rights</h2>
+    <p>Under the PDPA 2022 you have the right to:</p>
+    <ul>
+      <li>access a copy of your data;</li>
+      <li>correct inaccurate data;</li>
+      <li>ask for deletion (except data your employer must keep by law);</li>
+      <li>object to or restrict certain uses;</li>
+      <li>withdraw consent (GPS, camera, notifications) in your phone settings.</li>
+    </ul>
+    <p>Write to <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> or ask your employer. We reply within 30 days and may first verify your identity. If you are not satisfied, you can complain to the <b>Personal Data Protection Commission (PDPC)</b> of Tanzania.</p>
+  </div>
+
+  <div class="card hl" id="en-delete">
+    <h2>10. Deleting your account and data</h2>
+    <p><b>Employees:</b> ask your employer to remove you from the team, or email <a href="mailto:[CONTACT EMAIL]?subject=Delete%20my%20account">[CONTACT EMAIL]</a> from a known phone number or email address with your name, phone number and business name.</p>
+    <p><b>Owners:</b> email <a href="mailto:[CONTACT EMAIL]?subject=Close%20my%20business">[CONTACT EMAIL]</a> asking to close your business account; we will verify it is you.</p>
+    <p>Once verified, we delete the account, PIN, device tokens and selfies straight away. Attendance and payroll records that the employer must keep by law stay until that period ends (see section 7), then they are deleted.</p>
+  </div>
+
+  <div class="card" id="en-children">
+    <h2>11. Children</h2>
+    <p>This is a workplace app and is not for anyone under 18. We do not knowingly collect children's data; if we find any, we delete it.</p>
+  </div>
+
+  <div class="card" id="en-changes">
+    <h2>12. Changes and contact</h2>
+    <p>We may update this policy. We will announce significant changes in the app or on this page, and the date at the top will change.</p>
+    <p>Questions: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> · [COMPANY NAME, ADDRESS]</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Dukani · Wafanyakazi</span>
+  <span><a href="terms.html">Masharti ya Matumizi · Terms of Use</a> · <a href="#sw">Juu / Top</a></span>
+</footer>
+</body>
+</html>
