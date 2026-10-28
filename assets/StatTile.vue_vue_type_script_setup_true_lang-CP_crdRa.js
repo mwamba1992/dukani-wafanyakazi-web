@@ -1,6 +1,0 @@
-import{a6 as s,d,f as t,H as a,b as i,t as l,g as c,I as k,o as n}from"./index-BPghWBG1.js";/**
- * @license lucide-vue-next v0.400.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const r=s("DownloadIcon",[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"7 10 12 15 17 10",key:"2ggqvy"}],["line",{x1:"12",x2:"12",y1:"15",y2:"3",key:"1vk2je"}]]),u=d({__name:"StatTile",props:{label:{},value:{},note:{},mono:{type:Boolean},dark:{type:Boolean},loading:{type:Boolean},valueClass:{}},setup(e){return(o,m)=>(n(),t("div",{class:a(["card flex flex-col gap-1 px-4 py-3.5",e.dark?"!border-ink !bg-ink text-white":""])},[i("span",{class:a(["text-xs font-semibold",e.dark?"text-ink-soft":"text-muted"])},l(e.label),3),e.loading?(n(),t("span",{key:0,class:a(["my-1 h-6 w-24 animate-pulse rounded-md",e.dark?"bg-white/10":"bg-ink/[0.07]"])},null,2)):(n(),t("span",{key:1,class:a(["text-lg font-bold tracking-tight tabular-nums sm:text-[22px]",[e.mono?"font-mono":"",e.valueClass]])},l(e.value),3)),e.note&&!e.loading?(n(),t("span",{key:2,class:a(["text-xs",e.dark?"text-ink-soft":"text-subtle"])},l(e.note),3)):c("",!0),k(o.$slots,"default")],2))}});export{r as D,u as _};
